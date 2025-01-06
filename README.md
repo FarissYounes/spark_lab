@@ -35,7 +35,7 @@ Follow these steps to set up and run the project:
 ### 1. Data Extraction
 Extract all the necessary data used in scripts files by running the `data_extraction.sh` script:
 ```bash
-chmod +x data_extraction.sh
+chmod +x ./data/data_extraction.sh
 ./data/data_extraction.sh
 ```
 
