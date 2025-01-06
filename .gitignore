@@ -1,0 +1,7 @@
+# Ignore the data/ directory except for the .sh file containing data extraction instructions.
+/data/*
+!/data/data_extraction.sh
+!/data/schema.csv
+
+# Ignore virtual envirenement
+/spark_env
