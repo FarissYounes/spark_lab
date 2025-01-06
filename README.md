@@ -28,3 +28,24 @@ This dataset is ideal for:
 
 For detailed schema and examples, refer to the [official dataset documentation](https://github.com/google/cluster-data).
 
+## Setup Instructions
+
+Follow these steps to set up and run the project:
+
+### 1. Data Extraction
+Extract all the necessary data used in scripts files by running the `data_extraction.sh` script:
+```bash
+chmod +x data_extraction.sh
+./data/data_extraction.sh
+
+### 2. Create a Virtual Environment
+Set up a Python virtual environment to isolate the dependencies:
+
+```bash
+python3 -m venv spark_env
+
+Activate the virtual environment:
+source spark_env/bin/activate
+
+### 3. Install all the required Python packages from the requirements.txt file:
+pip install -r requirements.txt
