@@ -14,6 +14,8 @@ gsutil cp $FIRST_FILE ./task_events-$(basename $FIRST_FILE)
 FIRST_FILE=$(gsutil ls gs://clusterdata-2011-2/machine_events/part-?????-of-?????.csv.gz | head -n 1)
 gsutil cp $FIRST_FILE ./machine_events-$(basename $FIRST_FILE)
 
-
+# Extract and download the first file from `machine_events`
+FIRST_FILE=$(gsutil ls gs://clusterdata-2011-2/task_usage/part-?????-of-?????.csv.gz | head -n 1)
+gsutil cp $FIRST_FILE ./task_usage-$(basename $FIRST_FILE)
 
 echo "Data extraction complete!"
