@@ -37,6 +37,7 @@ Extract all the necessary data used in scripts files by running the `data_extrac
 ```bash
 chmod +x data_extraction.sh
 ./data/data_extraction.sh
+```
 
 ### 2. Create a Virtual Environment
 Set up a Python virtual environment to isolate the dependencies:
@@ -46,6 +47,9 @@ python3 -m venv spark_env
 
 Activate the virtual environment:
 source spark_env/bin/activate
+```
 
 ### 3. Install all the required Python packages from the requirements.txt file:
+```bash
 pip install -r requirements.txt
+```
