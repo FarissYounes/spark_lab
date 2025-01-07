@@ -1,5 +1,5 @@
 from pyspark.sql import SparkSession
-from pyspark.sql.functions import col, count, lit
+from pyspark.sql.functions import col
 
 # Initialize SparkSession
 spark = SparkSession.builder \

@@ -6,7 +6,7 @@ spark = SparkSession.builder \
     .appName("Resource Peaks and Eviction Correlation with Time") \
     .getOrCreate()
 
-# Define the correct column names for task_usage and task_events
+# Define the correct column names for task_usage
 task_usage_columns = [
     "start_time", "end_time", "job_ID", "task_index", "machine_ID", 
     "CPU_rate", "canonical_memory_usage", "assigned_memory_usage", "unmapped_page_cache", 
@@ -15,6 +15,7 @@ task_usage_columns = [
     "memory_accesses_per_instruction", "sample_portion", "aggregation_type", "sampled_CPU_usage"
 ]
 
+# Define the correct column names for task_events
 task_events_columns = [
     "time", "missing_info", "job_ID", "task_index", "machine_ID", 
     "event_type", "user", "scheduling_class", "priority", 
