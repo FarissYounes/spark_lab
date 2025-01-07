@@ -53,3 +53,7 @@ source spark_env/bin/activate
 ```bash
 pip install -r requirements.txt
 ```
+
+## View Pre-Executed Scripts 
+If you do not want to set up the project locally, you can directly view the Jupyter Notebook, ./scripts/combined_scripts_exec.ipynb
+which contains all the executed scripts and their results.
